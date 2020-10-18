@@ -1,0 +1,157 @@
+/* Box */
+* {
+    box-sizing: border-box;
+}
+
+/* Common */
+.body__container {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Section & Inner */
+.section {
+
+}
+
+.inner {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* Button */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    padding: 0 12px;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.5;
+    background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .07);
+}
+
+.btn-green {
+    background: #55a532 linear-gradient(#91dd70, #55ae2e);
+    border: 1px solid #65b836;
+    color: #fff;
+}
+
+/* Input */
+input {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 4px;
+}
+  
+input:focus {
+    border-color: #99f8ff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075),
+                0 0 5px rgba(81, 167, 232, .5);
+}
+
+input::-webkit-input-placeholder { color: #cacaca; }
+input::-ms-input-placeholder { color: #cacaca; }
+input::-moz-placeholder { color: #cacaca; }
+
+/* Float & Clearfix */
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* Header */
+.section-header .inner {
+    padding: 20px 0;
+}
+
+.section-header .left-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.section-header .left-menu ul a {
+    display: block;
+    padding: 15px 10px;
+}
+
+.section-header .left-menu ul a:hover {
+    color: rgb(88, 130, 185);
+}
+
+.section-header .left-menu .menu-logo {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    background: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.section-header .left-menu .menu-logo:hover {
+    background: url("../img/logo_on.svg");
+}
+
+.section-header .right-menu {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.section-header .right-menu ul {
+    display: flex;
+}
+
+.section-header .right-menu ul a {
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.section-header .right-menu form input {
+    width: 180px;
+    margin-right: 5px;
+}
+
+.section-header .right-menu .btn-group {
+    display: flex;
+}
+
+.section-header .right-menu .btn-group a:first-child {
+    margin-right: 5px;
+}
